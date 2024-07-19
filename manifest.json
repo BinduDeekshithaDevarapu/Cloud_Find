@@ -1,0 +1,28 @@
+{
+    "name":"Cloud Find",
+    "version":"1.0",
+    "description":"Find files in distributed cloud storages",
+    "permissions":["storage","tabs"],
+    "host_permissions":["https://*.drive.google.com/*"],
+    "background": {
+        "service_worker":"background.js"
+    },
+    "content_scripts":[
+        {
+        "matches":["https://*.drive.google.com/*"],
+        "js":["contentScript.js"]
+        }
+    ],
+    "action":{
+        "default_icon":{
+
+        },
+        "default_title":"Cloud Find",
+        "deafult_popup":"popup.html"
+    },
+    "manifest_version":3
+
+
+
+ 
+}
