@@ -5,7 +5,7 @@
     "permissions":["storage","tabs"],
     "host_permissions":["https://*.drive.google.com/*"],
     "background": {
-        "service_worker":"background.js"
+        "service_worker":"sw.js"
     },
     "content_scripts":[
         {
@@ -18,7 +18,7 @@
 
         },
         "default_title":"Cloud Find",
-        "deafult_popup":"popup.html"
+        "default_popup":"popup.html"
     },
     "manifest_version":3
 
